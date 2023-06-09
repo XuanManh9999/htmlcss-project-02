@@ -1,0 +1,11 @@
+Nếu là inline thì sẽ không set được width hight. 
+Nếu là thẻ a thì sẽ không thay đổi được các padding trên dưới 
+Với những phần riêng ta đặt thêm class cho nó là được
+Margin thì sẽ tạo ra khoảng cách lên trên. Còn padding giúp làm đều màu 
+Để ảnh không bị méo thì dùng object fix: cover
+Cách căn giữa icon đó là cho thằng icon đó có display: flex kém 2 thuộc tính của trục của nó.
+.hero-summary .item:nth-of-type(2) .icon{
+    background: #FCEFFF;
+} 
+Tại thẻ có class item thứ 2 tác động lên class icon.
+Khi 2 cái margin hoặc padding đối nhau, thì nó sẽ lấy cái cao hơn. Gọi là margin conslap.

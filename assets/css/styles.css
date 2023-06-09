@@ -1,0 +1,220 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+}
+/* Common */
+:root {
+    --font-headding: Sen, sans-serif;
+    --primary-color: #FFB900;
+}
+a {
+    text-decoration: none;
+}
+.btn {
+    display: inline-block;
+    padding: 0 16px;
+    min-width: 118px;
+    line-height: 50px;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #171100;
+    border-radius: 999px;
+}
+.btn:hover {
+    opacity: 0.9;
+}
+.main-content {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin-left: auto;
+    margin-right: auto;
+}
+.header.fixed {
+    position: sticky;
+    top: -28px;
+    z-index: 1  ;
+}
+.header {
+    background: #FFFCF4;
+}
+.header .body {
+    padding: 36px 0 8px;
+    display: flex;
+    align-items: center;
+}
+.nav {
+    margin-left: auto;
+}
+.nav ul {
+    display: flex;
+}
+.nav a {
+    padding: 8px 21px;
+    font-size: 16px;
+    color: #5F5B53; 
+    position: relative;
+}
+.nav a:hover ,
+.nav li.active a{
+    text-shadow: 1px 0 0 currentColor;
+    color: #171100;
+}
+.nav li.active a::after {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 2px;
+    background: #171100;
+    border-radius: 1px;
+    position: absolute;
+    left: 21px;
+    bottom: 6px;
+}
+.header .sign-up-btn {
+    min-width: 144px;
+}
+.header .action {
+    margin-left: 49px;
+}
+/* Hero */
+.hero {
+    padding: 56px 0 65px;
+    background: #FFFCF4;
+}
+.hero .body {
+    display: flex;
+}
+/* hero Left */
+.hero .media-block {
+    width: 48%;
+    position: relative;
+}
+.hero .media-block .img {
+    width: 470px;
+    height: 685px;
+    object-fit: cover;
+    border-radius: 20px;
+    display: block;
+}
+.hero .hero-summary {
+    padding: 24px;
+    width: 270px;
+    position: absolute;
+    right: 0;
+    bottom: 48px;
+    background: #FFFFFF;
+    box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+}
+.hero-summary .item {
+    display: flex;
+    align-items: center;
+}
+.hero-summary .item + .item {
+    margin-top: 22px;
+}
+.hero-summary .icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFF9E8;
+}
+.hero-summary .item .info {
+    margin-left: 16px;
+}
+.hero-summary .lable {
+    font-size: 1.4rem;
+    line-height: 1.85;
+    color: #5F5B53;
+}
+.hero-summary .title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.66;
+    color: #171100;
+}
+.hero-summary .item:nth-of-type(2) .icon{
+    background: #FCEFFF;
+}
+.hero-summary .item:nth-of-type(3) .icon {
+    background: #EBEAFF;
+}
+/* hero right */
+.hero .content-block {
+    width: 52%;
+    padding: 64px 0 0 130px;
+}
+.hero .content-block .heading {
+    font-family: var(--font-headding);
+    font-weight: 700;
+    font-size: 5.8rem;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: #171100;
+
+}
+.hero .desc {   
+    margin-top: 22px;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #5F5B53;
+}
+.hero .cta-group {
+    margin: 38px 0  48px;
+    display: flex;
+    align-items: center;
+}
+.hero .hero-cta {
+    min-width: 180px;
+    line-height: 64px;
+    background: var(--primary-color);
+    border-radius: 32px;
+}
+.hero .watch-video {
+    border: none;
+    background-color: transparent;
+    display: flex;
+    margin-left: 28px;
+    align-items: center;
+    cursor: pointer;
+}
+.hero .watch-video .icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.07);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero .watch-video span {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #171100;
+    margin-left: 14px;
+}
+.hero .start strong {
+    font-family: var(--font-headding);
+    padding-right: 8px;
+    font-weight: 1.4;
+    font-size: 4.4rem;
+    line-height: 1.67;
+    color: #171100;
+}
+.content-block .start strong:nth-of-type(2) {
+    margin-left: 22px;
+}
