@@ -11,3 +11,12 @@ Tại thẻ có class item thứ 2 tác động lên class icon.
 Khi 2 cái margin hoặc padding đối nhau, thì nó sẽ lấy cái cao hơn. Gọi là margin conslap.
 Với định dạng svg mình có thể sử dụng để tùy chỉnh màu được, và nó có thể chạy trực tiếp trên
 html được stroke là màu của nó.
+Mặc định thẻ img nó sẽ hiển thị kích thước gốc của nó
+word-break: break-all; Thuộc tính này giúp các text khi không có khoảng trắng trình duyệt 
+vẫn nhận biết được và bẻ nó xuống hàng.
+.line-clamp-two {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 2);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+} Giúp khi người dùng nhập quá 2 dòng thì nó sẽ hiện dấu 3...; 
