@@ -15,9 +15,23 @@ body {
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
+.add {
+    transform: translateX(-100%);
+    transition: all ease 0.3s;
+}  
+.add_1 {
+    transform: translateX(-200%);
+    transition: all ease 0.3s;
+}  
 .line-clamp-two {
     display: -webkit-box;
     -webkit-line-clamp: var(--line-clamp, 2);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.line-clamp-four {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 4);
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
@@ -349,4 +363,70 @@ a {
     color: #fff;
     background-color: var(--primary-color);
     cursor: pointer;
+}
+/* feedback */
+.feedback {
+    width: 100%;
+    margin-top: 135px;
+    min-height: 380px;
+    background: #2E2100;
+    display: flex;
+    align-items: center;
+}
+.feedback .feedback-list {
+    display: flex;
+    overflow: hidden;
+}
+
+.feedback .feedback-list .feedback-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    width: 100%;
+}
+.feedback .feedback-list .feedback-item  .info {
+    width: 159px;
+    height: 188px;
+    padding-left: 130px;
+}
+.feedback .feedback-item .info .avatar {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.feedback .feedback-item .title {
+    font-family: var(--font-headding);
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 1.2;
+    color: #F7F7F7;
+    min-width: 130px;
+    max-width: 200;
+}
+.feedback .feedback-item .info .desc {
+    margin-top: 4px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2  ;
+    color: #BFBCB3;
+    min-width: 160px;
+    max-width: 200;
+}
+.feedback .feedback-item .info .dots {
+    margin-top: 28px;
+    display: flex;
+    gap: 5px;
+}
+
+.feedback-item .content {
+    max-width: 66%;
+    max-height: 188px;
+}
+.feedback-item .content blockquote {
+    font-weight: 400;
+    font-size: 2.6rem;
+    line-height: 1.53;
+    color: #FFFFFF;
 }
