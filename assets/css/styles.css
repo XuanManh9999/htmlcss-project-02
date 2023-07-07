@@ -430,3 +430,229 @@ a {
     line-height: 1.53;
     color: #FFFFFF;
 }
+/* features */
+.features {
+    margin-top: 135px;
+    padding: 65px 0;
+}
+.features .body {
+    display: flex;
+    justify-content: space-between;
+}
+.features .body .images {
+    display: flex;
+    gap: 30px;
+}
+.features .body .images img {
+    height: 404px;
+    width: 270px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+.features img.lower {
+    margin-top: 34px;
+}
+.features .content {
+    width: 41%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.features .content .desc {
+    margin-top: 16px;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #5F5B53;
+}
+.features .content .cta-btn {
+    margin-top: 32px;
+    min-width: 137px;
+    color: #fff;
+    background-color: var(--primary-color);
+}
+.features-2nd {
+    margin-top: 70px;
+}
+.features-2nd .body{
+    flex-direction: row-reverse;
+}
+.features-2nd .content {
+    width: 49%;
+}
+.features-2nd .images img {
+    width: 470px;
+    height: 440px;
+    object-fit: cover;
+}
+/* Blog */
+.blog {
+    margin-top: 135px;
+    padding: 96px 0;
+    background: #FFFCF4;
+}
+.blog .blog-top {
+    text-align: center;
+}
+.blog .blog-top .desc {
+    margin: 16px auto auto;
+    color: #696262;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    width: 448px;
+}
+.blog .item:hover {
+    box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
+}
+.blog .blog-list {
+    margin-top: 55px;
+    display: flex;
+    gap: 30px;
+    overflow: hidden;
+}
+.blog .blog-list .item {
+    width: calc(33.333% - 20px);
+    color: #fff;
+    border-radius: 16px;
+    flex-shrink: 0;
+}
+.blog .item .thumb {
+    width: 100%;
+    border-radius: 16px 16px 0px 0px;
+    height: 250px;
+    object-fit: cover;
+}
+.blog .item .info {
+    padding: 20px 20px 28px;
+}
+.blog .info .date {
+    display: inline-flex;
+    align-items: center;
+    color: #5F5B53;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    position: relative;
+    padding-bottom: 12px;
+}
+.blog .info .date::before {
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    margin-right: 4px;
+}
+.blog .info .date::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: inline-block;
+    /* width: 160px; */
+    right: -27px;
+    height: 1px;
+    border-radius: 0.5px;
+    background: #E2DFDA;
+}
+.blog .info .title {
+    margin-bottom: 12px;
+}
+.blog .info .title a{
+    display: inline-block;
+    margin-top: 13px;
+    color: #171100;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75;
+}
+.blog .info .btn:hover {
+    background-color: var(--primary-color);
+}
+.blog .info .btn {
+    font-size: 1.4rem;
+}
+/* dots */
+.dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 38px;
+    gap: 6px;
+}
+.dots .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #5F5B53;
+    cursor: pointer;
+}
+.dot.active {
+    cursor: default;
+    background-color: #FFB900;
+}
+/* Footer */
+.footer {
+    padding: 96px 135px 0;
+    background: #2E2100;
+}
+.footer .row {
+    display: flex;
+    padding-bottom: 38px;
+    border-bottom: 1px solid #59554B;;
+}
+.footer .row .column {
+    width: 21.6%;
+}
+.footer .row .column:first-child {
+    width: 35%;
+}
+.footer .row .column .desc {
+    margin-top: 18px;
+    max-width: 267px;
+    color: #BFBCB2;
+    font-size: 1.4rem;
+    line-height: 1.67;
+}
+.footer .row .column .socials {
+    display: flex;
+    gap: 18px;
+    margin-top: 18px;;
+}
+.footer .row .column .title {
+    color: #FFF;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.87;
+    border-bottom: 1px solid #59554B;
+    display: inline-block;
+    padding-bottom: 14px;
+    padding-right: 48px;
+}
+.footer  .list {
+    margin-top: 48px;
+}
+.footer  .list a {
+    color: #BFBCB2;
+    font-size: 1.4rem;
+    line-height: 1.87;
+    margin-bottom: 12px;
+}
+.footer  .list a:last-child {
+    margin-bottom: 0;
+}
+.footer  .list strong {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.87;
+}
+.footer .copyright {
+    padding: 28px 0;
+}
+.footer .copyright .desc {
+    color: #807D74;
+    font-size: 1.4rem;
+    font-style: normal;
+    line-height: 1.87;
+    text-align: center;
+}

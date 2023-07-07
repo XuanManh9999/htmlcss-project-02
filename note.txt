@@ -20,3 +20,9 @@ vẫn nhận biết được và bẻ nó xuống hàng.
     -webkit-box-orient: vertical;
     overflow: hidden;
 } Giúp khi người dùng nhập quá 2 dòng thì nó sẽ hiện dấu 3...; 
+^ hiểu là nhảy ra ngoài một cấp
+Sau này gặp khối nào đè nhau thì ta chỉ cần viết một class lên trên cha là ok.
+Muốn set cái chữ bao nhiêu xuống hàng thì chỉ cần xét width cho nó.
+Có cả thuộc tính inline-flex nghĩa là nó inline và vẫn có tính flex.
+Khi ta đưa các thẻ lên 1 hàng để làm slider show nó sẽ bị nén lại ta có thẻ dùng 
+ flex-shrink: 0; để nó không nén nữa dữ đúng kích thước
